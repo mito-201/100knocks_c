@@ -1,0 +1,20 @@
+{
+	"name": "devcontainer-100knocks_c",
+	"build": {
+		"dockerfile": "../Dockerfile"
+	},
+	"workspaceFolder": "/workspace",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"brody715.vscode-cuelang",
+				"yzhang.markdown-all-in-one",
+				"bierner.markdown-mermaid",
+				"shardulm94.trailing-spaces",
+				"gruntfuggly.todo-tree"
+			]
+		}
+	}
+}
