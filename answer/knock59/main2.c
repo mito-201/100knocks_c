@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print_array(int);
+void print_array(int array[][3]);
 
 int main(void)
 {
