@@ -3,7 +3,10 @@ C言語で以下の100本ノックをやっていきます。
 
 [京都産業大学 基礎プロI 100本ノック](https://www.cc.kyoto-su.ac.jp/~mmina/bp1/hundredKnocks.html)
 
-まずは基礎編から。
+実施済み
+- No.01 - 20
+- No.59
+- No.83
 
 ## 環境
 Windows11 Home ＋ DockerDesktop ＋ VScode
