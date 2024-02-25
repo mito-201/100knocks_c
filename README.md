@@ -1,5 +1,6 @@
 # 100本ノック C言語
 C言語で以下の100本ノックをやっていきます。
+
 [京都産業大学 基礎プロI 100本ノック](https://www.cc.kyoto-su.ac.jp/~mmina/bp1/hundredKnocks.html)
 
 まずは基礎編から。
@@ -15,7 +16,7 @@ Windows11 Home ＋ DockerDesktop ＋ VScode
   - git push時のメールアドレスも非公開にしたいため
   - 右上ユーザアイコン -> Settings -> Emails
     - 以下2つにチェックを入れる
-      - Keep my email addresses private 
+      - Keep my email addresses private
       - Block command line pushes that expose my email
 - メールアドレスの設定
   - 右上ユーザアイコン -> Settings -> Emails
@@ -83,3 +84,6 @@ $
 
 ### コミットメッセージのサンプル
 [はてな匿名ダイアリーより](https://anond.hatelabo.jp/20160725092419)
+
+### コマンド
+Windowsコマンドを使う
