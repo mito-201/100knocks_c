@@ -21,6 +21,10 @@ Windows11 ＋ DockerDesktop ＋ VScode
 - メールアドレスの設定
   - 右上ユーザアイコン -> Settings -> Emails
     - Primary email address に記載されている【数字】+【アカウント名】@users.noreply.github.comを入力する
+
+![Primary_email_address](./assets/Primary_email_address.png)
+
+
 ```
 $ git config --global --list
 user.name=【アカウント名】
