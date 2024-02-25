@@ -4,9 +4,16 @@ C言語で以下の100本ノックをやっていきます。
 [京都産業大学 基礎プロI 100本ノック](https://www.cc.kyoto-su.ac.jp/~mmina/bp1/hundredKnocks.html)
 
 実施済み
-- No.01 - 20
-- No.59
-- No.83
+- 基礎編
+  - No.01 - 29
+- 初級編
+  - No.20
+- 中級編
+  - No.59
+- グラフィクス編
+  - 　
+- 上級編
+  - No.83 じゃんけん5回勝負
 
 ## 環境
 Windows11 Home ＋ DockerDesktop ＋ VScode
@@ -44,7 +51,7 @@ $
 $ more main.c
 #include <stdio.h>
 
-void main()
+int main(void)
 {
     printf("Hello World\n");
 }
