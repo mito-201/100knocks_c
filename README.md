@@ -14,7 +14,7 @@ C言語で以下の100本ノックをやっていきます。
   - 　
 - 上級編
   - No.83 じゃんけん5回勝負
-  - No.87 運命数（回答中）
+  - No.87 運命数
 
 ## 環境
 Windows11 Home ＋ DockerDesktop ＋ VScode
@@ -43,7 +43,7 @@ user.email=【数字】+【アカウント名】@users.noreply.github.com
 ```
 
 ## ファイル作成からコンパイル、実行までの流れ
-knock00のHello World表示例
+knock00のHello World表示例。
 
 ```
 $ ls
@@ -84,6 +84,12 @@ To https://github.com/XXXXXX/100knocks_c.git
    b2c36f0..e375f59  main -> main
 $
 ```
+
+## トラブルシューティング
+- math.hをコンパイルする時は、-lmを付けないと通らない。
+  - コマンド例　gcc mainc -lm
+  - 参考　[C言語 math.hをコンパイルする時に-lmが必要ないとき](https://tech.kurojica.com/archives/53903/)
+
 
 ## その他
 
