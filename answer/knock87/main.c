@@ -5,13 +5,12 @@
 
 int main(void)
 {
-    int birthday, i, k, a, result = 0;
-    double j;
+    int birthday, i, k, result = 0;
 
     printf("誕生日をYYYYMMDDの形式で入力してください: ");
     scanf("%d", &birthday);
 
-    for(a = 0; a < 2; a++) { // 誕生日を99999999としても各桁の和は最大2桁のため、2周する
+    do {
         for( i = 7; i >= 0; i--) {
             k = (int)pow( 10.0, (double)i);
             result = result + (birthday / k);
@@ -24,7 +23,7 @@ int main(void)
             birthday = result;
             result = 0;
         }
-    }
+    } while(birthday > 0); // 各桁の和を足す際、birthdayから桁を引いていくため、0＝計算終了となる
     
     printf("運命数は%d\n", result);
 
