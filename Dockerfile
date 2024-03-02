@@ -1,7 +1,7 @@
-FROM mcr.microsoft.com/vscode/devcontainers/cpp:ubuntu-21.04
+FROM mcr.microsoft.com/vscode/devcontainers/cpp:ubuntu-22.04
 
-RUN apt install -y tzdata
+RUN apt update \
+    && apt install -y tzdata \
+    && apt install -y libgtk-3-dev
+
 ENV TZ=Asia/Tokyo
-
-# 開発環境のシステムインストール
-# RUN apt install -y clang-format
