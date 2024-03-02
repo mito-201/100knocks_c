@@ -16,6 +16,7 @@ C言語で以下の100本ノックをやっていきます。
   - No.83 じゃんけん5回勝負
   - No.87 運命数
   - No.88 big or small
+  - No.89 逆big or small
 
 ## 環境
 Windows11 Home ＋ DockerDesktop ＋ VScode
