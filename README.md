@@ -34,8 +34,7 @@ Windows11 Home ＋ DockerDesktop ＋ VScode
 - メールアドレスの設定
   - 右上ユーザアイコン -> Settings -> Emails
     - Primary email address に記載されている【数字】+【アカウント名】@users.noreply.github.comを入力する
-
-![Primary_email_address](./assets/Primary_email_address.png)
+    - ![Primary_email_address](./assets/Primary_email_address.png)
 
 
 ```
@@ -45,7 +44,8 @@ user.email=【数字】+【アカウント名】@users.noreply.github.com
 ```
 
 ## ファイル作成からコンパイル、実行までの流れ
-knock00のHello World表示例。
+knock00のHello World表示例。  
+使用したいライブラリによっては、コンパイル時のコマンドの引数が変わるので、[トラブルシューティング](#トラブルシューティング)を参照すること。
 
 ```
 $ ls
@@ -91,6 +91,11 @@ $
 - math.hをコンパイルする時は、-lmを付けないと通らない。
   - コマンド例　gcc mainc -lm
   - 参考　[C言語 math.hをコンパイルする時に-lmが必要ないとき](https://tech.kurojica.com/archives/53903/)
+- グラフィックライブラリをコンパイルするときのコマンド
+  - gcc `pkg-config --cflags gtk+-3.0` main.c `pkg-config --libs gtk+-3.0`
+  - 参考　[Gtk – 3.0](https://docs.gtk.org/gtk3/)
+  - ![troubleshooting_gtk](./assets/troubleshooting_gtk.png)
+
 
 
 ## その他
