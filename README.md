@@ -9,7 +9,7 @@ C言語で以下の100本ノックをやっていきます。
 - 初級編
   - No.20 - 39
 - 中級編
-  - No.40, 51, 53, 55, 58, 59
+  - No.40 - 55, 58, 59
 - グラフィクス編
   - 環境構築中
 - 上級編
@@ -91,6 +91,11 @@ $
 - math.hをコンパイルする時は、-lmを付けないと通らない。
   - コマンド例　gcc mainc -lm
   - 参考　[C言語 math.hをコンパイルする時に-lmが必要ないとき](https://tech.kurojica.com/archives/53903/)
+- ファイルをリダイレクトで入力するコマンド（Kcnok54）
+  - ```
+    $ gcc main.c
+    $ ./a.out < small.data
+    ```
 - グラフィックライブラリをコンパイルするときのコマンド
   - gcc `pkg-config --cflags gtk+-3.0` main.c `pkg-config --libs gtk+-3.0`
   - 参考　[Gtk – 3.0](https://docs.gtk.org/gtk3/)
