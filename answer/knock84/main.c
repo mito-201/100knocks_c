@@ -5,10 +5,16 @@ int main(void)
 {
     char a[4][13][13];
     int i ;
+    for (i = 0; i < 13; i++){
+        snprintf(a[0][i], 13, "%s", "ダイヤ");
+        snprintf(a[0][i], 13, "%s", "ダイヤ");
+        snprintf(a[0][i], 13, "%s", "ダイヤ");
+        snprintf(a[0][i], 13, "%s", "ダイヤ");
+    }
 
     for (i = 0; i < 13; i++){
-        strcpy(a[0][i], "ダイヤ" + (char)i);
-        strcpy(a[1][i], "ハート" + (char)i);
+        snprintf(a[0][i], 13, "%s", i);
+//        strcpy(a[1][i], "ハート" + (char)i);
 //       a[1][i] = "ハート" & (char)i;
   //      a[2][i] = "スペード" & (char)i;
     //    a[3][i] = "クローバー" & (char)i;
