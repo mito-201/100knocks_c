@@ -11,7 +11,7 @@ int main(void)
 {
     int stone_qty;
     do {
-        printf("3石の数を入力してください（10以上）: ");
+        printf("石の数を入力してください（10以上）: ");
         scanf("%d", &stone_qty);
     } while (stone_qty < 10);
     printf("石の数： %d\n", stone_qty);
