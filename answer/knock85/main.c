@@ -57,6 +57,9 @@ bool judge_stone(int player, int stone_qty)
     if (stone_qty < 0) {
         printf("プレイヤー%dの反則負け\n", player);
         result = true;
+    } else if(stone_qty == 0) {
+        printf("プレイヤー%dの負け\n", player);
+        result = true;
     } else if(stone_qty == 1) {
         printf("プレイヤー%dの勝ち\n", player);
         result = true;
