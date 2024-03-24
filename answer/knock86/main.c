@@ -41,7 +41,9 @@ int main(void)
                 break;
             case 1:  // CPUの番
             default:
+
                 stone = get_random(1, 3);
+
                 printf("%d個取ります\n", stone);
                 stone_qty = stone_qty - stone;
                 printf("石の数： %d\n", stone_qty);
@@ -72,6 +74,7 @@ int get_stone()
     return num;
 }
 
+// 勝敗の結果を決める
 void judge_stone(int player, int stone_qty)
 {
     if (stone_qty < 0) {
