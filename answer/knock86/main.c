@@ -30,6 +30,7 @@ int main(void)
         printf("ではわたしから\n");
     }
 
+    // 石の取り合い
     int stone, player = first_player;
     while (stone_qty > 1) {
         switch(player) {
@@ -37,21 +38,42 @@ int main(void)
                 stone = get_stone();
                 stone_qty = stone_qty - stone;
                 printf("石の数： %d\n", stone_qty);
+
+                // ゲームの判断
+                judge_stone(player, stone_qty);
+
                 player = 1;
                 break;
             case 1:  // CPUの番
             default:
-
-                stone = get_random(1, 3);
+                switch(stone_qty) {
+                    case 8:
+                    case 4:
+                        stone = 3;
+                        break;
+                    case 7:
+                    case 3:
+                        stone = 2;
+                        break;
+                    case 9:
+                    case 6:
+                    case 2:
+                        stone = 1;
+                        break;
+                    default:
+                        stone = get_random(1, 3);
+                }
 
                 printf("%d個取ります\n", stone);
                 stone_qty = stone_qty - stone;
                 printf("石の数： %d\n", stone_qty);
+
+                // ゲームの判断
+                judge_stone(player, stone_qty);
+
                 player = 0;
         }
 
-        // ゲームの判断
-        judge_stone(player, stone_qty);
     }
 
     return 0;
