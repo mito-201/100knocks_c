@@ -24,6 +24,9 @@ int main(void)
     int first_player;
     srand((unsigned int)time(NULL));
     first_player = get_random(0, 1);
+    if (stone_qty % 4 == 1) {
+        first_player = 0;
+    }
     if (first_player == 0) {
         printf("あなたからどうぞ\n");
     } else {
@@ -47,23 +50,18 @@ int main(void)
             case 1:  // CPUの番
             default:
                 switch(stone_qty) {
-                    case 8:
                     case 4:
                         stone = 3;
                         break;
-                    case 7:
                     case 3:
                         stone = 2;
                         break;
-                    case 9:
-                    case 6:
                     case 2:
                         stone = 1;
                         break;
                     default:
-                        stone = get_random(1, 3);
+                        stone = (stone_qty - 5) % 4;
                 }
-
                 printf("%d個取ります\n", stone);
                 stone_qty = stone_qty - stone;
                 printf("石の数： %d\n", stone_qty);
