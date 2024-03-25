@@ -24,7 +24,7 @@ int main(void)
     int first_player;
     srand((unsigned int)time(NULL));
     first_player = get_random(0, 1);
-    if (stone_qty % 4 == 1) {
+    if (stone_qty % 4 == 1) {  // あまり1になる数字は先に石をとるほうが負けるため、プレイヤーを指定。
         first_player = 0;
     }
     if (first_player == 0) {
